@@ -2,7 +2,6 @@ import React, { useState, useEffect, useRef } from 'react';
 import axios from 'axios';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import Sidebar from './components/Sidebar';
 import ProductSearchFilter from './components/ProductSearchFilter';
 import ProductTable from './components/ProductTable';
 import InventoryHistorySidebar from './components/InventoryHistorySidebar';
@@ -236,7 +235,6 @@ function App() {
 
   return (
     <div className="flex min-h-screen">
-      <Sidebar />
       <main className="flex-1 p-6 bg-gray-50">
         <div className="flex items-center justify-between mb-4">
           <h1 className="text-2xl font-semibold">Products</h1>
